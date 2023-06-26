@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/_vars.scss","../scss/_mixins.scss","../scss/texts.scss"],"names":[],"mappings":"AAyCA;EACE;EACA,OAzCc;;;AC2BhB;EALI,YADyB;EAEzB;EACA;;;AAMJ;EARI,YAS+B;EAR/B;EACA;;;AASJ;EAXI,YAY+B;EAX/B;EACA;;;ACvBJ;EACI;EAEA;EAEA;EAEA;EAEA;EACA;;;AAGJ;EACI;EACA;EACA;;;AAGJ;EAEI;;;AAGJ;EACI,OF1BY;;;AE6BhB;EACI","file":"texts.css"}

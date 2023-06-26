@@ -1,0 +1,66 @@
+@use 'vars';
+@use 'mixins';
+
+.slider {
+    // height: max-content;
+    // width: max-content;
+    overflow: hidden;
+}
+  
+.slides-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-top: 10px;
+
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    
+    
+    
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slides-container::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    // background: transparent;
+}
+.slides-container::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0px;
+}
+.slides-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+
+    scroll-snap-align: start;
+    flex-shrink: 0;
+
+    /* width: 300px;
+    height: 300px; */
+
+    /* margin-right: 50px; */
+
+    /* border-radius: 10px; */
+
+    /* background: #eee; */
+
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

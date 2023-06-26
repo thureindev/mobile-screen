@@ -1,0 +1,45 @@
+$font-stack: Helvetica, sans-serif;
+$primary-bg-color: #92859C;
+$primary-color: #333;
+
+$iPhone14-width: 428px;
+$iPhone14-height: 926px;
+
+$iPhone5s-width: 320px;
+$iPhone5s-height: 568px;
+
+$hardware-width: $iPhone14-width;
+$hardware-height: $iPhone14-height;
+
+$hardware-border: 7px solid #67DFB1;
+$hardware-outline-color: #bbffe6;
+$hardware-border-radius: 48px;
+
+$screen-border: 7px solid #424242;
+$screen-outline: 5px solid #67DFB1;
+$screen-border-radius: 40px;
+
+$app-bg-color: #67dfb1;
+
+$app-menu-border-radius: 40px 40px 0 0;
+$app-border-radius: 24px;
+
+$dockbar-height: 80px;
+$dockbar-item-side: 60px;
+
+$dockbar-item-bg-color: #424242;
+$dockbar-item-color: #fff;
+
+$app-menu-bg-color: #b2a9b9;
+
+$page-dot-color: #e0ffe4;
+$page-dot-border: 2px solid $app-menu-bg-color;
+$page-dot-selected-color: #e0ffe4;
+$page-dot-selected-border: 2px solid #e3f8e9;
+
+$profile-border: 12px solid #F8EBE3;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}

@@ -1,0 +1,34 @@
+@use 'vars';
+@use 'mixins';
+
+.info-text {
+    color: #fff;
+
+    font-size: xx-large;
+
+    font-family: 'Caprasimo', cursive;
+
+    line-height: 1.5em;
+
+    text-align: left;
+    margin-left: 15px;
+}
+
+.text-to-right {
+    text-align: right;
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.brand-logo {
+    
+    font-family: 'Belanosima', sans-serif;
+}
+
+.primary-emphasized-text {
+    color: vars.$primary-color;
+}
+
+.navbar-items {
+    font-family: 'Belanosima', sans-serif;
+}

@@ -1,0 +1,130 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+
+.dockbar, .dockbar-item, .slide {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.dockbar, .dockbar-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  background: DarkGray;
+  box-shadow: 0 0 1px rgba(169, 169, 169, 0.25);
+  color: #fff;
+}
+
+.alert {
+  background: DarkRed;
+  box-shadow: 0 0 1px rgba(139, 0, 0, 0.25);
+  color: #fff;
+}
+
+.success {
+  background: DarkGreen;
+  box-shadow: 0 0 1px rgba(0, 100, 0, 0.25);
+  color: #fff;
+}
+
+.app-menu {
+  width: 100%;
+  height: calc(100% - 80px);
+  border-radius: 40px 40px 0 0;
+}
+
+.dockbar {
+  height: 80px;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px inset, rgba(0, 0, 0, 0.22) 0px 15px 12px inset;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px inset, rgba(0, 0, 0, 0.22) 0px 10px 10px inset;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px inset, rgba(0, 0, 0, 0.23) 0px 6px 6px inset;
+}
+
+.app {
+  width: 80px;
+  height: 80px;
+  background-color: #67dfb1;
+  margin: 10px;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.19) 10px 10px 20px, rgba(0, 0, 0, 0.23) 6px 6px 6px;
+}
+
+.app.fade {
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.dockbar-item {
+  width: 60px;
+  height: 60px;
+  background-color: #424242;
+  margin: 10px;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  overflow: hidden;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.dockbar-item img {
+  object-fit: cover;
+}
+
+.slideshow {
+  background: #EEE;
+  height: 100%;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  background: #b2a9b9;
+  counter-increment: slide;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* CAUROSEL FLICKITY CUSTOM STYLES */
+/* PAGE DOTS
+position dots in carousel */
+.flickity-page-dots {
+  position: absolute !important;
+  bottom: -5px !important;
+}
+
+/* white circles */
+.flickity-page-dots .dot {
+  width: 16px !important;
+  height: 16px !important;
+  opacity: 1 !important;
+  background: #e0ffe4 !important;
+  border: 2px solid #b2a9b9 !important;
+}
+
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: #e0ffe4 !important;
+  border: 2px solid #e3f8e9 !important;
+}
+
+/* NEXT AND PREV BUTTONS 
+position outside */
+.flickity-prev-next-button.previous {
+  position: fixed !important;
+  left: -60px !important;
+}
+
+.flickity-prev-next-button.next {
+  position: fixed !important;
+  right: -60px !important;
+}
+
+/*# sourceMappingURL=app_menu.css.map */
