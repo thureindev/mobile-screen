@@ -132,6 +132,7 @@ position dots in carousel */
   opacity: 1 !important;
   background: #e0ffe4 !important;
   border: 2px solid #b2a9b9 !important;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 /* fill-in selected dot */
