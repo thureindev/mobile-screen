@@ -18,7 +18,9 @@ $hardware-border: 7px solid #67DFB1;
 $hardware-outline-color: #bbffe6;
 $hardware-border-radius: 48px;
 
-$screen-border: 7px solid #424242;
+$screen-bg-color: #424242;
+$screen-padding: 7px;
+$screen-border: 5px solid #67DFB1;
 $screen-outline: 5px solid #67DFB1;
 $screen-border-radius: 40px;
 
@@ -26,9 +28,12 @@ $app-text-color: #333;
 $app-text-highlight-color: #92859C;
 $app-bg-color: #67dfb1;
 
-$app-menu-border-radius: 40px 40px 0 0;
+$app-menu-border-radius: 30px 30px 0 0;
+
 $app-border-radius: 24px;
 
+$dockbar-bg-color: beige;
+$dockbar-border-radius: 0 0 30px 30px;
 $dockbar-height: 80px;
 $dockbar-item-side: 60px;
 

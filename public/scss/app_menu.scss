@@ -5,6 +5,8 @@
     width: 100%;
     height: calc(100% - vars.$dockbar-height);
     border-radius: vars.$app-menu-border-radius;
+    
+    overflow: hidden;
 }
 
 .dockbar {
@@ -13,6 +15,9 @@
     @extend %flexbox;
     justify-content: space-evenly;
     align-items: center;
+
+    background-color: vars.$dockbar-bg-color;
+    border-radius: vars.$dockbar-border-radius;
 
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px inset, rgba(0, 0, 0, 0.22) 0px 15px 12px inset;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px inset, rgba(0, 0, 0, 0.22) 0px 10px 10px inset;
@@ -112,7 +117,7 @@
 position dots in carousel */
 .flickity-page-dots {
     position: absolute !important;
-    bottom: -5px !important;
+    bottom: 2px !important;
 }
 /* white circles */
 .flickity-page-dots .dot {
