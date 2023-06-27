@@ -7,6 +7,15 @@
     border-radius: vars.$app-menu-border-radius;
     
     overflow: hidden;
+    .slideshow {
+        border-radius: vars.$app-menu-border-radius;
+        overflow: hidden;
+        
+        .slide {
+            border-radius: vars.$app-menu-border-radius;
+            overflow: hidden;
+        }
+    }
 }
 
 .dockbar {
@@ -19,9 +28,11 @@
     background-color: vars.$dockbar-bg-color;
     border-radius: vars.$dockbar-border-radius;
 
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px inset, rgba(0, 0, 0, 0.22) 0px 15px 12px inset;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px inset, rgba(0, 0, 0, 0.22) 0px 10px 10px inset;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px inset, rgba(0, 0, 0, 0.23) 0px 6px 6px inset;
+    // box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px inset, rgba(0, 0, 0, 0.22) 0px 15px 12px inset;
+    // box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px inset, rgba(0, 0, 0, 0.22) 0px 10px 10px inset;
+    // box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px inset, rgba(0, 0, 0, 0.23) 0px 6px 6px inset;
+    
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px inset, rgba(0, 0, 0, 0.24) 0px 1px 2px inset;
 }
 
 .app {
