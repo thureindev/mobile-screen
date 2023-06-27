@@ -22,6 +22,8 @@ nav {
 	position: sticky;
 	top: 0;
 
+    z-index: 100;
+
     background-color: vars.$primary-bg-color !important;
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
@@ -67,6 +69,34 @@ footer {
         }
         a {
             color: #000;
+        }
+    }
+    
+    @media screen and (orientation: portrait) {
+        
+        margin-top: 20px;
+
+        div {
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .copyright {
+            margin-top: 10px;
+        }
+
+        .contacts {
+            ul {
+                margin-top: 0;
+            }
+        }
+        .addresses {
+            flex-direction: column;
+            li {
+                margin-bottom: 10px;
+            }
+            margin-bottom: 10px;
         }
     }
 }

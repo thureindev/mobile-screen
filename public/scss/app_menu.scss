@@ -20,16 +20,35 @@
 }
 
 .app {
-    width: 80px;
-    height: 80px;
+    width: vars.$iPhone14-app-size;
+    height: vars.$iPhone14-app-size;
+
+    @extend %flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
     background-color: vars.$app-bg-color;
+    
+    font-family: 'Belanosima', sans-serif;
+    color: vars.$app-text-color;
+
 
     margin: 10px;
     
     border-radius: vars.$app-border-radius;
 
     box-shadow: rgba(0, 0, 0, 0.19) 10px 10px 20px, rgba(0, 0, 0, 0.23) 6px 6px 6px;
+    transition: color ease 1.2s;
+
     
+    @media screen and (orientation: portrait) {
+        width: vars.$iPhone5s-app-size;
+        height: vars.$iPhone5s-app-size;
+    }
+}
+.app:hover {
+    color: vars.$app-text-highlight-color; 
 }
 .app.fade {
     box-shadow: 0 0 0 rgba($color: #fff, $alpha: 0);
@@ -114,10 +133,18 @@ position outside */
 .flickity-prev-next-button.previous {
     position: fixed !important;
     left: -60px !important;
+
+    @media screen and (orientation: portrait){
+        display: none;
+    }
 }
 .flickity-prev-next-button.next {
     position: fixed !important;
     right: -60px !important;
+    
+    @media screen and (orientation: portrait){
+        display: none;
+    }
 }
 // ------------------------------------------------------------
 // ------------------------------------------------------------

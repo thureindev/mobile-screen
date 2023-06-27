@@ -38,17 +38,41 @@ body {
   align-items: center;
   background-color: #92859C;
   height: 100%;
+  perspective: 1000px;
+}
+@media screen and (orientation: portrait) {
+  .frame-container {
+    height: auto;
+    flex-direction: column;
+  }
 }
 
 .hardware-body-container {
-  width: 375px;
-  height: 667px;
+  width: 428px;
+  height: 760px;
   justify-content: flex-start;
   background-color: #bbffe6;
   border-right: 7px solid #67DFB1;
   border-bottom: 7px solid #67DFB1;
   border-radius: 48px;
-  transform: rotate(4deg) translate(0px, 100px);
+  transform: rotate(4deg) translate(0px, 100px) skewX(-16deg);
+  transform: rotateY(-19deg) rotateX(21deg) rotateZ(4deg) translate(0px, 100px) skewX(-9deg);
+}
+@media screen and (orientation: portrait) {
+  .hardware-body-container {
+    transform-origin: center;
+    transform: rotateY(-19deg) rotateX(-21deg);
+    border-bottom: 0px;
+    border-top: 7px solid #67DFB1;
+    align-items: flex-end;
+  }
+}
+@media screen and (orientation: portrait) and (max-width: 480px) {
+  .hardware-body-container {
+    transform: rotateY(-19deg) rotateX(-21deg) scale(0.95);
+    width: 320px;
+    height: 568px;
+  }
 }
 
 .screen-container {
@@ -67,6 +91,15 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+}
+@media screen and (orientation: portrait) {
+  .profile-container {
+    margin-top: 90px;
+    margin-bottom: 80px;
+  }
+  .profile-container p {
+    text-align: center;
+  }
 }
 
 .profile-img {

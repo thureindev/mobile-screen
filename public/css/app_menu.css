@@ -3,7 +3,7 @@ body {
   color: #333;
 }
 
-.dockbar, .dockbar-item, .slide {
+.dockbar, .app, .dockbar-item, .slide {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -51,10 +51,26 @@ body {
 .app {
   width: 80px;
   height: 80px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: #67dfb1;
+  font-family: "Belanosima", sans-serif;
+  color: #333;
   margin: 10px;
   border-radius: 24px;
   box-shadow: rgba(0, 0, 0, 0.19) 10px 10px 20px, rgba(0, 0, 0, 0.23) 6px 6px 6px;
+  transition: color ease 1.2s;
+}
+@media screen and (orientation: portrait) {
+  .app {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.app:hover {
+  color: #92859C;
 }
 
 .app.fade {
@@ -121,10 +137,20 @@ position outside */
   position: fixed !important;
   left: -60px !important;
 }
+@media screen and (orientation: portrait) {
+  .flickity-prev-next-button.previous {
+    display: none;
+  }
+}
 
 .flickity-prev-next-button.next {
   position: fixed !important;
   right: -60px !important;
+}
+@media screen and (orientation: portrait) {
+  .flickity-prev-next-button.next {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=app_menu.css.map */

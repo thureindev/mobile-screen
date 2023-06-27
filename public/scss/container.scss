@@ -13,11 +13,24 @@
 
     height: 100%;
 
+    perspective: 1000px;
+
+    @media screen and (orientation: portrait) {
+
+        height: auto;
+        flex-direction: column;
+
+        // background-color: red;
+    }
+    // @media screen and (orientation: portrait) {
+    //     overflow-x: hidden;
+    // }
 }
 
+
 .hardware-body-container {
-    width: 375px;
-    height: 667px;
+    width: vars.$iPhone14-width;
+    height: vars.$iPhone14-height;
 
     @extend %flexbox;
     justify-content: flex-start;
@@ -29,7 +42,32 @@
     border-bottom: vars.$hardware-border;
     border-radius: vars.$hardware-border-radius;
 
-    transform: rotate(4deg) translate(0px, 100px);
+
+    
+
+    transform: rotate(4deg) translate(0px, 100px) skewX(-16deg);
+    
+    transform: rotateY(-19deg) rotateX(21deg) rotateZ(4deg) translate(0px, 100px) skewX(-9deg);
+
+
+    @media screen and (orientation: portrait) {
+
+        transform-origin: center;
+        transform:rotateY(-19deg) rotateX(-21deg);
+
+        @media (max-width: 480px) {
+
+            transform: rotateY(-19deg) rotateX(-21deg) scale(0.95);
+
+            width: vars.$iPhone5s-width;
+            height: vars.$iPhone5s-height;
+        }
+
+        border-bottom: 0px;
+        border-top: vars.$hardware-border;
+        align-items: flex-end;
+
+    }
 
 }
 .hardware-body-container.mobile {
@@ -63,6 +101,14 @@
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    
+    @media screen and (orientation: portrait) {
+        margin-top: 90px;
+        margin-bottom: 80px;
+        p {
+            text-align: center;
+        }
+    }
 }
 
 .profile-img {

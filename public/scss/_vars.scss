@@ -3,10 +3,13 @@ $primary-bg-color: #92859C;
 $primary-color: #333;
 
 $iPhone14-width: 428px;
-$iPhone14-height: 926px;
+$iPhone14-height: 760px;
 
 $iPhone5s-width: 320px;
 $iPhone5s-height: 568px;
+
+$iPhone14-app-size: 80px;
+$iPhone5s-app-size: 60px;
 
 $hardware-width: $iPhone14-width;
 $hardware-height: $iPhone14-height;
@@ -19,6 +22,8 @@ $screen-border: 7px solid #424242;
 $screen-outline: 5px solid #67DFB1;
 $screen-border-radius: 40px;
 
+$app-text-color: #333;
+$app-text-highlight-color: #92859C;
 $app-bg-color: #67dfb1;
 
 $app-menu-border-radius: 40px 40px 0 0;
