@@ -58,17 +58,17 @@
 
             // transform: rotateY(-19deg) rotateX(-21deg) scale(0.95);
             
-            transform:rotateY(12deg) rotateX(7deg) rotateZ(-5deg) skewX(6deg) scale(0.95);
+            transform:rotateY(12deg) rotateX(7deg) rotateZ(-5deg) skewX(7deg) scale(0.95);
 
             width: vars.$iPhone5s-width;
             height: vars.$iPhone5s-height;
         }
 
         justify-content: flex-end;
+        align-items: flex-start;
 
         border-right: 0;
         border-left: vars.$hardware-border;
-        align-items: flex-end;
 
     }
 

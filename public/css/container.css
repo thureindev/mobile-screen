@@ -61,14 +61,14 @@ body {
     transform-origin: center;
     transform: rotateY(12deg) rotateX(7deg) rotateZ(-5deg) skewX(9deg);
     justify-content: flex-end;
+    align-items: flex-start;
     border-right: 0;
     border-left: 7px solid #67DFB1;
-    align-items: flex-end;
   }
 }
 @media screen and (orientation: portrait) and (max-width: 480px) {
   .hardware-body-container {
-    transform: rotateY(12deg) rotateX(7deg) rotateZ(-5deg) skewX(6deg) scale(0.95);
+    transform: rotateY(12deg) rotateX(7deg) rotateZ(-5deg) skewX(7deg) scale(0.95);
     width: 320px;
     height: 568px;
   }

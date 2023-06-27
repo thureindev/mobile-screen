@@ -104,14 +104,14 @@ body {
 }
 
 .slideshow {
-  background: #EEE;
+  background: #b2a9b9;
   height: 100%;
 }
 
 .slide {
+  background: #b2a9b9;
   width: 100%;
   height: 100%;
-  background: #b2a9b9;
   counter-increment: slide;
   justify-content: space-evenly;
   flex-wrap: wrap;
