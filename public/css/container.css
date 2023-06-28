@@ -58,7 +58,6 @@ body {
   border-radius: 48px;
   box-shadow: rgba(0, 0, 0, 0.15) 115px 65px 15px 0px;
   transform: rotateY(-19deg) rotateX(21deg) rotateZ(4deg) translate(0px, 100px) skewX(-9deg);
-  z-index: 100;
 }
 @media screen and (orientation: portrait) {
   .hardware-body-container {
@@ -94,7 +93,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  z-index: 110;
 }
 @media screen and (orientation: portrait) {
   .profile-container {
