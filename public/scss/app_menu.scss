@@ -100,6 +100,8 @@
     @extend %flexbox;
     justify-content: center;
     align-items: center;
+    
+    transition: color ease 1.2s;
 }
 
 .slideshow {
