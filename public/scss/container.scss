@@ -17,8 +17,12 @@
 
     @media screen and (orientation: portrait) {
 
+        width: 100vw;
+        overflow-x: hidden;
+        
         height: auto;
         flex-direction: column;
+
 
         // background-color: red;
     }
@@ -41,13 +45,10 @@
     border-bottom: vars.$hardware-border;
     border-radius: vars.$hardware-border-radius;
 
+    box-shadow: rgba(0, 0, 0, 0.15) 115px 65px 15px 0px;
 
-    
-
-    // transform: rotate(4deg) translate(0px, 100px) skewX(-16deg);
 
     transform: rotateY(-19deg) rotateX(21deg) rotateZ(4deg) translate(0px, 100px) skewX(-9deg);
-
 
     @media screen and (orientation: portrait) {
 
@@ -63,16 +64,38 @@
             width: vars.$iPhone5s-width;
             height: vars.$iPhone5s-height;
         }
-
+        
         justify-content: flex-end;
         align-items: flex-start;
-
+        box-shadow: rgba(0, 0, 0, 0.15) -65px 65px 15px 0px;
         border-right: 0;
         border-left: vars.$hardware-border;
-
     }
-
+    
+    z-index: 100;
 }
+
+// .hardware-body-container::after {
+    
+//     content: "";
+//     position: absolute;
+//     //top: 100%; /* Adjust the distance of the shadow from the div */
+//     left: 0;
+//     bottom: 5px;
+    
+//     width: 100%;
+//     height: 50%; /* Adjust the height of the shadow */
+//     // background-color: rgba(0, 0, 0, 0.5); /* Adjust the shadow color and opacity */
+    
+//     border-radius: vars.$hardware-border-radius;
+
+//     transform-origin: bottom left;
+
+//     transform: skewX(-45deg); /* Adjust the skew angle of the shadow */
+//     z-index: -1;
+//     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px, rgba(0, 0, 0, 0.92) 0px 0px 700px 1000px inset;
+// }
+
 .hardware-body-container.mobile {
     @extend %fillspace;
 }
@@ -112,6 +135,8 @@
             text-align: center;
         }
     }
+    
+    z-index: 110;
 }
 
 .profile-img {

@@ -42,6 +42,8 @@ body {
 }
 @media screen and (orientation: portrait) {
   .frame-container {
+    width: 100vw;
+    overflow-x: hidden;
     height: auto;
     flex-direction: column;
   }
@@ -54,7 +56,9 @@ body {
   border-right: 7px solid #67DFB1;
   border-bottom: 7px solid #67DFB1;
   border-radius: 48px;
+  box-shadow: rgba(0, 0, 0, 0.15) 115px 65px 15px 0px;
   transform: rotateY(-19deg) rotateX(21deg) rotateZ(4deg) translate(0px, 100px) skewX(-9deg);
+  z-index: 100;
 }
 @media screen and (orientation: portrait) {
   .hardware-body-container {
@@ -62,6 +66,7 @@ body {
     transform: rotateY(12deg) rotateX(7deg) rotateZ(-5deg) skewX(9deg);
     justify-content: flex-end;
     align-items: flex-start;
+    box-shadow: rgba(0, 0, 0, 0.15) -65px 65px 15px 0px;
     border-right: 0;
     border-left: 7px solid #67DFB1;
   }
@@ -89,6 +94,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  z-index: 110;
 }
 @media screen and (orientation: portrait) {
   .profile-container {

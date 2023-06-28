@@ -25,6 +25,8 @@ nav {
     z-index: 100;
 
     background-color: vars.$primary-bg-color !important;
+
+    // clear the shadow of nav
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
 }

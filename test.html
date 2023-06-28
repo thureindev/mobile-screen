@@ -4,27 +4,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testing</title>
     <style>
-        .perspective-container {
-            perspective: 1000px; /* Adjust the value as needed */
-        }
-        
-        .tilted-div {
-            width: 200px; /* Set the desired width */
-            height: 400px; /* Set the desired height */
-            background-color: #ccc;
-            transform: rotateY(30deg); /* Adjust the rotation angle as needed */
-            transform-origin: left center; /* Adjust the origin point as needed */
-        }
-      
+        .vertical-div {
+  width: 100px;
+  height: 600px;
+  background-color: red;
+  position: relative;
+  /* transform: rotate(90deg); */
+}
+
+.vertical-div::before {
+  content: "";
+  position: absolute;
+  top: 100%; /* Adjust the distance of the shadow from the div */
+  left: 0;
+  width: 100%;
+  height: 10px; /* Adjust the height of the shadow */
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the shadow color and opacity */
+  transform: skewX(-45deg); /* Adjust the skew angle of the shadow */
+  z-index: -1;
+}
+   
 
     </style>
 </head>
 <body>
-    <div class="perspective-container">
-        <div class="tilted-div">
-        <!-- Your content here -->
-        </div>
-    </div>
+    <div class="vertical-div"></div>
+
   
 </body>
 </html>
